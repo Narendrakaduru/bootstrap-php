@@ -17,7 +17,7 @@ $Email=$_POST['Email'];
 $About=$_POST['about'];
 
 $sql = "INSERT INTO sign (Uname, Password, Email, About)
-VALUES ('$Uname','$Password','$Email','About')";
+VALUES ('$Uname','$Password','$Email','$About')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
